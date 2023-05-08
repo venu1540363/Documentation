@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* This is applied for full screen*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #f98f48;
+  width: 100%;
+}
+
+header img {
+  height: 400px;
+  width: 400px;
+  /* margin-right: 20px; */
+}
+
+/*Header component css ends here*/
+
+.mainheading {
+  color: white;
+  font-size: 50px;
+}
+
+.name {
+  font-size: 40px;
+  color: white;
+}
+
+.headingcomponent {
+  width: 100%;
+  height: 65%;
+}
+
+.silde1main {
+  /* background-color: gray; */
+  width: 100%;
+  height: 1200px;
+  /* padding: 80px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.silde1main1 {
+  padding: 100px 100px 0px 100px;
+}
+
+.fixedfont {
+  font-size: 26px;
+  font-weight: normal;
+  color: black;
+}
+.numbers {
+  background-color: #ffd0af;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.numberSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numbersline {
+  border-left: 10px solid #fee9da;
+  height: 500px;
+  margin: 0 10px;
+}
+.bottombarpart1 {
+  height: 20px;
+  background-color: #fbc29b;
+  display: flex;
+  width: 100%;
+}
+
+.bottombarpart2 {
+  height: 55px;
+  background-color: #f98f48;
+  display: flex;
+  width: 100%;
+}
+
+.bottombartext {
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: flex-end;
+  width: 95%;
+  color: #fff;
+  font-size: 25px;
+}
+
+/*This is used many times*/
+
+.slide1line1 {
+  line-height: 35px;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.slide1line2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.goalsimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*Top part in first slide completed here*/
+
+.component1 {
+}
+
+.box {
+  background-color: #ffd0af;
+  color: white;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+.body1 {
+  padding: 0 70px;
+}
+
+.paraheading {
+  color: #cc6b27;
+  font-size: 35px;
+}
+
+.para1 {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 45px;
+}
+
+.para2 {
+  display: flex;
+  flex-direction: row;
+  /* margin: 0 20px; */
+}
+
+.para1content {
+}
+
+.parabody1 {
+  font-size: 30px;
+  line-height: 1.5;
+  max-width: 100%;
+  /* line-height: 20px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.status1 {
+  display: flex;
+  width: 100%;
+  padding: 30px 0px;
+  /* align-items: center; */
+  /* background-color: #cc6b27; */
+}
+
+.scale {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 45px;
+  margin: 20px;
+}
+
+.scale::after {
+  display: none;
+}
+
+.bar {
+  height: 100%;
+}
+
+.pointer {
+  position: absolute;
+  background-color: #025893;
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid white;
+  bottom: 30px;
+  line-height: 40px;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.gap {
+  background-color: transparent;
+}
+
+.bar-first {
+  height: 100%;
+  border-radius: 50px 0 0 50px;
+}
+.bar-last {
+  height: 100%;
+  border-radius: 0 50px 50px 0;
+  /* list-style: none;
+  overflow: hidden; */
+}
+
+.datatable {
+  /* display: flex; */
+  width: 100%;
+  /* margin-left: 130px; */
+  margin-top: 20px;
+}
+
+.tableinfo {
+  width: 100%;
+  padding-top: 30px;
+}
+
+table.fixed-size {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+thead tr:nth-child(1) th {
+  background-color: #f98f48;
+}
+
+thead tr:nth-child(2) th {
+  background-color: #fbba8e;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+
+.range-slider {
+  width: 100%;
+}
+
+.stepbox {
+  width: 100%;
+  height: 120px;
+  max-width: 1800px;
+  margin: 0 auto;
+  /* padding: 20px 0; */
+  margin-top: 5%;
+}
+
+.stepbox .stepbar {
+  counter-reset: step;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stepbox .stepbar li {
+  list-style-type: none;
+  width: 33.33%;
+  font-size: 14px;
+  font-family: sans-serif;
+  position: relative;
+  text-align: center;
+  color: #d8d8d8;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.stepbox .stepbar li:before {
+  width: 45px;
+  height: 45px;
+  content: "";
+  font-size: 26px;
+  line-height: 45px;
+  border: 5px solid #d8d8d8;
+  display: block;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.stepbox .stepbar li:after {
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: #d8d8d8;
+  top: 25px;
+  left: -50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.stepbox .stepbar li:first-child:after {
+  content: none;
+}
+
+.stepbox .stepbar li.step_active:before {
+  background-color: #db9767;
+}
+
+.stepbox .stepbar li.step_highlight:before {
+  box-shadow: 0 0 0 10px #db9767;
+}
+
+.stepbox .stepbar li.highlighted {
+  color: black;
+  font-weight: bold;
+}
