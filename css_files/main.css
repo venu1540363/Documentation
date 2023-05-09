@@ -295,12 +295,12 @@ td {
 }
 
 .stepbox .stepbar li:before {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   content: "";
   font-size: 26px;
   line-height: 45px;
-  border: 5px solid #d8d8d8;
+  border: 8px solid #d8d8d8;
   display: block;
   margin: 0 auto 10px auto;
   text-align: center;
@@ -315,7 +315,7 @@ td {
   height: 4px;
   content: "";
   background-color: #d8d8d8;
-  top: 25px;
+  top: 25%;
   left: -50%;
   position: absolute;
   z-index: 1;
@@ -327,10 +327,11 @@ td {
 
 .stepbox .stepbar li.step_active:before {
   background-color: #db9767;
+  border: 8px solid white;
 }
 
 .stepbox .stepbar li.step_highlight:before {
-  box-shadow: 0 0 0 10px #db9767;
+  box-shadow: 0 0 0 6px #db9767;
 }
 
 .stepbox .stepbar li.highlighted {
