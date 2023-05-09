@@ -632,6 +632,7 @@
       const stepbars = document.querySelectorAll(".stepbar");
       stepbars.forEach((stepbar) => {
         const items = stepbar.querySelectorAll("li");
+
         items.forEach((item) => {
           item.addEventListener("click", () => {
             items.forEach((other) => other.classList.remove("highlighted"));
@@ -640,6 +641,21 @@
         });
         // initialize the first item as highlighted
         items[0].classList.add("highlighted");
+      });
+
+      //to highlight the clicked step option
+      stepbars.forEach((stepbar) => {
+        const steps = stepbar.querySelectorAll("li");
+        steps.forEach((step) => {
+          step.addEventListener("click", () => {
+            // remove highlight from all steps in this step bar
+            steps.forEach((s) =>
+              s.classList.remove("step_active", "step_highlight")
+            );
+            // highlight the clicked step
+            step.classList.add("step_active", "step_highlight");
+          });
+        });
       });
 
       const scale = document.querySelector(".scale");
